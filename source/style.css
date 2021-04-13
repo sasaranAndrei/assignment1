@@ -88,7 +88,6 @@ h1 {
 }
 
 .firstUnderline {   
-    /* make text invisible, but let the underline color to be white */
     color: transparent;
     text-decoration-color: white;
     text-decoration-line: underline;
