@@ -208,7 +208,7 @@ input[type="range"]::-moz-range-track {
 
 .foodContainer {
     width: 1200px;
-    height: 900px;
+    height: 1140px;
     display: flex;
     flex-wrap: wrap;
     background-color: transparent;
@@ -217,13 +217,19 @@ input[type="range"]::-moz-range-track {
 .foodContainer .box {
     position: relative;
     width: 300px;
-    height: 450px;
+    height: 470px;
     background-color: transparent;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 .foodContainer .box .imgBox {
     position: relative;
+    border: 13px groove black;
+    border-radius: 1em;
 }
 
 .foodContainer .box .imgBox .foodImg {
@@ -237,14 +243,35 @@ input[type="range"]::-moz-range-track {
 }
 
 .foodContainer .box:hover .imgBox .foodImg {
-    transform: scale(1.1);
+    transform: scale(1.03);
+}
+
+.itemName {
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.itemGroup {
+    color: rgb(114, 112, 112);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.itemPrice {
+    color: rgb(255, 102, 0);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
 }
 
 footer {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100px;
-    top: 65px;
+    top: 1800px;
     background-color: transparent;
     display: flex;
     justify-content: center;
