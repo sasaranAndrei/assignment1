@@ -19,14 +19,14 @@ header:before {
     padding: 100px 200px;
 }
 
-.topContainer {
+.top-container {
     display: flex;
     justify-content: space-between;
     position: relative;
     padding: 55px 220px;
 }
 
-.logoContainer {
+.logo-container {
     display: flex;
 }
 
@@ -35,9 +35,9 @@ header:before {
     position: relative;
     width: 100px;
     vertical-align: middle;
-    
+
 }
-.logoName {
+.logo-name {
     color: white;
     display: flex;
     align-items: flex-start;
@@ -46,7 +46,7 @@ header:before {
     font-family: 'Montserrat', sans-serif;
 }
 
-.navigationTop {
+.navigation-top {
     display: flex;
     justify-content: flex-end;
 }
@@ -60,7 +60,7 @@ a {
 li {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    font-size: large;  
+    font-size: large;
     margin-left: 1.5em;
     padding: 0 20px;
     color: rgb(255, 102, 0);
@@ -78,26 +78,25 @@ h1 {
     font-size: 60px;
 }
 
-.tableContainer {
+.table-container {
     display: table;
 }
 
-.flexContainer {
+.flex-container {
     display: flex;
     justify-content: center;
 }
 
-.firstUnderline {   
-    /* make text invisible, but let the underline color to be white */
+.underline {
     color: transparent;
     text-decoration-color: white;
     text-decoration-line: underline;
     text-decoration-style: wavy;
 }
 
-.minilogo {
+.mini-logo {
     background-color: transparent;
-    height: 60px; 
+    height: 60px;
     display: table-cell;
     vertical-align: middle;
 }
@@ -115,15 +114,15 @@ h1 {
 }
 
 main {
-    position: relative;  
+    position: relative;
     background-color: white;
     height: 1000px;
     width: 100%;
     top: 60px;
 }
 
-.mainTop {
-    position: relative; 
+.main-top {
+    position: relative;
     display: flex;
     justify-content: space-between;
     background-color: rgba(180, 179, 179, 0.733);
@@ -142,7 +141,7 @@ select {
     padding: 1em 1.5em;
 }
 
-.dropdownContainer {
+.dropdown-container {
     position: relative;
 }
 
@@ -178,7 +177,7 @@ select {
     left: 250px;
 }
 
-.sliderContainer {
+.slider-container {
     position: relative;
     padding: 10px 0;
 }
@@ -187,53 +186,54 @@ input[type="range"]::-moz-range-progress {
     background-color: rgb(255, 102, 0);
 }
 
-input[type="range"]::-moz-range-track {  
-    background-color: #bbbbbb;
+input[type="range"]::-moz-range-track {
+    background-color: #eeeeee;
 }
 
-.slider {
-    background-color: transparent;
+#slider {
+    background-color: inherit;
 }
 
 .field span {
     padding: 0 10px;
 }
 
-.mainFood {
+.main-food {
     background-color: white;
     width: 100%;
-    height: 1000px;
+    height: 1180px;
     display: flex;
     justify-content: center;
 }
 
-.foodContainer {
+.food-container {
+    padding-top: 8px;
     width: 1200px;
-    height: 1140px;
+    height: 1200px;
     display: flex;
     flex-wrap: wrap;
     background-color: transparent;
 }
 
-.foodContainer .box {
+.food-container .box {
     position: relative;
     width: 300px;
-    height: 470px;
+    height: 500px;
     background-color: transparent;
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+
 }
 
-.foodContainer .box .imgBox {
+.food-container .box .img-box {
     position: relative;
-    border: 13px groove black;
+    border: 18px groove black;
     border-radius: 1em;
 }
 
-.foodContainer .box .imgBox .foodImg {
+.food-container .box .img-box .food-img {
     width: 300px;
     height: 450px;
     max-width: 100%;
@@ -243,25 +243,25 @@ input[type="range"]::-moz-range-track {
     transition: transform 1s;
 }
 
-.foodContainer .box:hover .imgBox .foodImg {
-    transform: scale(1.03);
+.food-container .box:hover .img-box .food-img {
+    transform: scale(1.042);
 }
 
-.itemName {
+.item-name {
     color: black;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
     font-weight: 500;
 }
 
-.itemGroup {
+.item-group {
     color: rgb(114, 112, 112);
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
     font-weight: 500;
 }
 
-.itemPrice {
+.item-price {
     color: rgb(255, 102, 0);
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;
@@ -270,8 +270,9 @@ input[type="range"]::-moz-range-track {
 
 footer {
     position: absolute;
+    padding-top: 2em;
     width: 100%;
-    height: 100px;
+    height: 50px;
     top: 1800px;
     background-color: transparent;
     display: flex;
