@@ -194,6 +194,14 @@ input[type="range"]::-moz-range-track {
     background-color: inherit;
 }
 
+#maxValue {
+    display: inline-block;
+    width: 100px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
 .field span {
     padding: 0 10px;
 }
@@ -261,7 +269,7 @@ input[type="range"]::-moz-range-track {
     font-weight: 500;
 }
 
-.item-price {
+.item-price, .price-value {
     color: rgb(255, 102, 0);
     font-family: 'Montserrat', sans-serif;
     font-size: 1em;

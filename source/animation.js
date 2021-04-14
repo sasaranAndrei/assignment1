@@ -1,22 +1,31 @@
-/*
-function sliderChange(){
-    document.getElementById("maxValue").innerHTML = "$" + sliderValue;
+function updateSliderValue(){
+    var sliderValue = document.getElementById("slider").value;
+    document.getElementById("maxValue").innerHTML = sliderValue;
+    return sliderValue;
 }
 
-
-function load (){
-    var slider = document.getElementById("slider");
-    var maxValue = document.getElementById("maxValue");
-    
-    slider.oninput = function(){
-        maxValue.innerHTML = this.value;
-    }    
-
+function filterMenuItem(item, sliderValue){
+    var priceValue = parseFloat(item.getElementsByClassName("price-value")[0].innerHTML);
+    if (priceValue > sliderValue){
+        item.style.visibility = 'hidden';
+    }
 }
 
-document.onload = function (){
-    
-    load();
-    
-};
-*/
+function showMenuItems(items){
+    Array.prototype.forEach.call(items, function(item){
+        item.style.visibility = 'visible';
+    });
+}
+
+function filterMenuItems(items, sliderValue){
+    Array.prototype.forEach.call(items, function(item){
+        filterMenuItem(item, sliderValue);
+    });
+}
+
+function sliderChange (){
+    sliderValue = updateSliderValue();
+    var items = document.getElementsByClassName("box");
+    showMenuItems(items);
+    filterMenuItems(items, sliderValue);
+}
